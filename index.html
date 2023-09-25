@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<input type="text" id="number1">
+	<input type="text" id="number2"><br><br>
+	<div>
+		<button id="addbtn">Add</button>
+		<button id="subbtn">Sub</button>
+		<button id="mulbtn">Mul</button>
+		<button id="divbtn">Div</button>
+    </div>
+	
+<script>
+	let _number1=document.getElementById("number1");
+	let _number2=document.getElementById("number2");
+	let _addbtn=document.getElementById("addbtn");
+	let _subbtn=document.getElementById("subbtn");
+	let _mulbtn=document.getElementById("mulbtn");
+	let _divbtn=document.getElementById("divbtn");
+	function add(a,b){
+		console.log(a+b);
+		}
+	_addbtn.addEventListener("click",function(){
+		if(_number1.value.trim()!==""&&_number2.value.trim()!==""){
+		let num1=parseInt(number1.value);
+		let num2=parseInt(number2.value);
+		add(num1,num2);
+		<!-- _number1.value=""; -->
+		<!-- _number2.value=""; -->
+		}
+		else{
+			alert("please enter some number");
+		}
+	})
+	function sub(a,b){
+		console.log(a-b);
+	}
+	_subbtn.addEventListener("click",function(){
+		if(_number1.value.trim()!==""&&_number2.value.trim()!==""){
+		let num1=parseInt(number1.value);
+		let num2=parseInt(number2.value);
+		sub(num1,num2);
+		<!-- _number1.value=""; -->
+		<!-- _number2.value=""; -->
+		}
+		else{
+			alert("please enter some number");
+		}
+	})
+	function mul(a,b){
+		console.log(a*b);
+	}
+	_mulbtn.addEventListener("click",function(){
+		if(_number1.value.trim()!==""&&_number2.value.trim()!==""){
+		let num1=parseInt(number1.value);
+		let num2=parseInt(number2.value);
+		mul(num1,num2);
+		<!-- _number1.value=""; -->
+		<!-- _number2.value=""; -->
+		}
+		else{
+			alert("please enter some number");
+		}
+	})
+	function div(a,b){
+		console.log(a/b);
+	}
+	_divbtn.addEventListener("click",function(){
+		if(_number1.value.trim()!==""&&_number2.value.trim()!==""){
+		let num1=parseInt(number1.value);
+		let num2=parseInt(number2.value);
+		div(num1,num2);
+		<!-- _number1.value=""; -->
+		<!-- _number2.value=""; -->
+		}
+		else{
+			alert("please enter some number");
+		}
+	})
+
+	
+	
+</script>
+</body>
+</html>	
